@@ -1,0 +1,43 @@
+<%- include ../partials/header.ejs %>
+
+    <%- include ../partials/main_nav.ejs %>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-1 col-md-8">
+                    <h1>
+                        <%= title %>
+                    </h1>
+
+                    <form class="form" method="POST">
+                        <div class="form-group">
+                            <lable for="ContactNameTextField">Contacts</lable>
+                            <input type="text" class="form-control" id="ContactNameTextField"
+                                placeholder="Enter the Contact Name" name="ContactName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <lable for="EmailTextField">Email</lable>
+                            <input type="text" class="form-control" id="EmailTextField"
+                                placeholder="Enter the Email address" name="Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <lable for="ContactNumberTextField">Contact Number</lable>
+                            <input type="number" class="form-control" id="ContactNumberTextField"
+                                placeholder="Enter the Contact Number" name="ContactNumber" required>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-edit"></i>Submit</button>
+                        <a href="/contact-list" class="btn btn-warning"><i class="fas fa-undo"></i>Cancel</a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <%- include ../partials/bottom_nav.ejs %>
+
+            <%- include ../partials/footer.ejs %>
